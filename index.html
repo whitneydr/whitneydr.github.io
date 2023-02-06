@@ -1,7 +1,54 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Smorgifboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <script async src="./script.js"></script>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="logo"><a href="./index.html"><img src="./assets/Smor-logo.svg"></a></div>
+        <nav>
+            <ul>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#trending">Trending</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+        <div class="search-section" id="search">
+            <h1>Find a GIF</h1>
+            <div class="search-bar">
+                <form id="search-area">
+                    <input type="text" id="search-query">
+                    <input type="submit">
+                </form>
+                <div class="search-icon" onclick="getSearchTerm()">
+                    <img src="./assets/Search.png" />
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div id="search-results-section">
+            <div id="search-results"></div>
+        </div>
+
+
+        <div class="popular-section" id="trending">
+
+            <h2>Trending GIFs</h2>
+            <div id="popular-gifs"></div>
+        </div>
+    </main>
 </body>
+
 </html>
